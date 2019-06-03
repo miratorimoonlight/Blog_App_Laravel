@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Blog_Website_Laravel;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -49,6 +49,6 @@ class User extends Authenticatable
     //Model relationship
     public function posts()
     {
-        return $this->hasMany('App\Post');
+        return $this->hasMany('Blog_Website_Laravel\Post');
     }
 }

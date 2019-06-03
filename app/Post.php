@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Blog_Website_Laravel;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class Post extends Model
     //many posts belong to one user. Many blogs -> ONE user
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('Blog_Website_Laravel\User');
     }
 }

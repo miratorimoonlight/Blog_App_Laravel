@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace Blog_Website_Laravel\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode as Middleware;
 

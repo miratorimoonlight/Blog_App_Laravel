@@ -4,6 +4,8 @@
 
 @section('moon')
     <h1>{{$post->title}}</h1>
+    <img style="width:auto; height:200px" src="/storage/cover_images/{{$post->cover_image}}">
+      
     <div>
         <p>{!!$post->body!!}</p>
     </div>

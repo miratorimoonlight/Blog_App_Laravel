@@ -2,7 +2,7 @@
 {{-- @section('activeCreatePost','active') --}}
 @section('moon')
     <h1>Create New Post</h1>
-    {{ Form::open(array('action' => 'PostsController@store', 'method' =>'POST')) }}
+    {{ Form::open(array('action' => 'PostsController@store', 'method' =>'POST', 'enctype'=>'multipart/form-data')) }}
         <div class="form-group">
 
             <!--same as <label for='title'>Title</label>-->
@@ -15,6 +15,12 @@
         <div class="form-group">
             {{Form::label('body','Content')}}
             {{Form::textarea('body','',['id'=>'article-ckeditor','class'=>'form-control','placeholder'=>'Write your content...'])}}
+        </div>
+
+        <!-- For file input -->
+        <div class="form-group">
+            {{-- <input type='file' name='image' --}}
+            {{Form::file('image')}}
         </div>
         {{Form::submit('Done',['class'=>'btn btn-primary'])}} 
     {{ Form::close() }}

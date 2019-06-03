@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Blog_Website_Laravel\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Auth;
+use Blog_Website_Laravel\Http\Controllers\Auth;
 
 class HomeController extends Controller
 {
